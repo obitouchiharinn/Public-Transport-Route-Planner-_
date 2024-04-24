@@ -1,0 +1,146 @@
+
+
+
+input[type="datetime-local"], input[type="number"]{
+    width: 90%;
+}
+
+input{
+    width: 100%;
+    text-align: center;
+    height: 2em;
+}
+
+#times-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#times{
+    display: flex;
+    flex-direction: column;
+    padding: 0.25em;
+    gap: 0.25em;
+    background-color: #000;
+    width: fit-content;
+    margin-bottom: 1em;
+    color: #00da48;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#times div{
+    color: inherit;
+}
+
+#times h2{
+    color: #00da48;
+}
+
+.main-wrapper{
+    text-align: center;   
+    place-items: center;
+    padding-bottom: 5em;
+}
+
+.main-wrapper h2{
+    margin: 0;
+}
+
+.form-wrapper{
+    margin: 0.5em auto 2em auto;
+    width: 70%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: left;
+    gap: 1em;
+    border: 5px solid rgb(78, 124, 209);
+    border-radius: 10px;
+}
+
+.frm-btn{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.route{
+    background-color: #454545;
+    padding: 0.25em;
+    position: relative;
+    width: fit-content;
+}
+
+.route h2{
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 0.5em;
+}
+
+.route-delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.25em;
+    height: fit-content;
+    font-size: 1em;
+    background-color: #f05031;
+    color: #000;
+}
+
+.time-display{
+    display: flex;
+}
+
+.time-display-stops{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 25em;
+    margin-right: 1em;
+}
+
+.time-display-times{
+    display: flex;
+    flex-direction: column;
+    min-width: 4.5em;
+    margin-right: 1em;
+}
+
+.error{
+    color: #f00;
+    min-height: 2em;
+}
+
+.form-heading{
+    grid-column: span 2;
+    text-align: center;
+}
+
+.form-divider{
+    grid-column: span 2;
+    width: 100%;
+    border: 0.125em solid rgb(78, 124, 209);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.save{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.save > div{
+    display: flex;
+    width: 70%;
+}
+
+#save-controls{
+    display: flex;
+    padding: 0 15%;
+    justify-content: center;
+}

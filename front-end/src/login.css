@@ -1,0 +1,20 @@
+.Login-component-wrapper {
+  text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    border-radius: 20px;
+    width : 60%;
+    text-align: left
+}
+
+input{
+    width : 100%;
+    
+}
+
+#Login-btn{
+    margin: 0 auto;
+    width: 50%;
+}

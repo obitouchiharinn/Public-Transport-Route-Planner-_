@@ -1,0 +1,101 @@
+/*
+    DEFINITION OF DEFAULT CSS DESIGNS AND COLORS, 
+    IN OTHER FILES, AVOID CHANGING COLORS OR FONTS 
+    IF ALREADY PREDEFINED HERE
+
+    note: to alter the design in other files, add a new class and define the new design
+*/
+
+
+/* h1 to be used only for home router */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78, 124, 209)
+}
+
+h1{
+    color: rgb(78, 124, 209);
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 3em; 
+    cursor: default;  
+    margin-bottom: 0px;
+}
+
+body {
+
+    margin: 0 auto;
+    border: rgb(78, 124, 209) 5px solid;
+    border-bottom: 0px;
+    height: 100vh;
+    background-color: rgb(203, 250, 241);
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin: 5px;
+    /* height: 30px; */
+    background-color: #007bff;
+    color: aquamarine;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:hover {
+    background-color: #0056b3;
+    border: 2px solid;
+    border-radius:  5px;
+}
+button:active {
+    background-color: #679dd8;
+    border: 2px solid;
+    border-radius:  5px;
+}
+
+
+input {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-color: transparent;
+    border-radius: 20px;
+    /* height: 40px; */
+    /* width: 30%; */
+    /* margin-top: 10px; */
+}
+
+form{
+    text-align: center;
+    border: 5px solid rgb(78, 124, 209);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+select {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-color: transparent;
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgb(155, 177, 180);
+    text-align: center;
+    width: 100%;
+    /* width: 30%; */
+    /* margin-top: 10px; */
+}
+
+
+/* H1 only to return to home */
+.main_header {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    /* border-bottom: rgb(78, 124, 209) 5px solid; */
+}
+.main_header:hover {
+    color: #1b00b3;
+    cursor: pointer;
+}

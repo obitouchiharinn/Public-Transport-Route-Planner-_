@@ -1,0 +1,95 @@
+.main-wrapper{
+    text-align: center;   
+    place-items: center;
+}
+
+.main-wrapper h2{
+    margin: 0;
+}
+
+.realtime-sequence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.realtime-sequence-divider{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.realtime-sequence-item{
+    height: 1.5em;
+    padding: 0.75em 1em;
+    font-size: 1.5em;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.realtime-sequence-text{
+    color: #00da48;
+}
+
+.realtime-sequence-remove{
+    color: #f05031;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.realtime-result-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.realtime-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    font-size: 1.25em;
+}
+
+.realtime-result-container{
+    display: flex;
+    position: relative;
+    margin: 0.5em 0;
+}
+
+.realtime-result-bar{
+    min-height: 4em;
+    max-height: 20em;
+    width: 1em;
+}
+
+.realtime-result-text{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.realtime-result-textbox{
+    position: absolute;
+    padding-left: 1.6em;
+    max-width: 1.6em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.realtime-result-node{
+    margin: 1em 0;
+    padding: 0.5em;
+    width: 100%;
+    background-color: #000;
+    color: #00da48;
+    border-radius: 0.5em;
+}

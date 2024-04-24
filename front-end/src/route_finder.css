@@ -1,0 +1,133 @@
+.main-wrapper{
+    text-align: center;   
+    place-items: center;
+}
+
+.main-wrapper h2{
+    margin: 0;
+}
+
+.point-selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.point-selector select{
+    width: fit-content;
+}
+
+.form-wrapper{
+    margin: 0.5em auto 2em auto;
+    width: 70%;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: left;
+    gap: 1em;
+    border: 5px solid rgb(78, 124, 209);
+    border-radius: 10px;
+}
+
+.form-wrapper h2{
+    grid-column: span 2;
+}
+
+.start-button{
+    margin: 0 auto;
+    grid-column: span 2;
+}
+
+.search-results-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.search-results{
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: 1fr; */
+    gap: 1em;
+    /* width: max(min(90%, 80em), 60vw); */
+    width: 90vw;
+}
+
+@media only screen and (min-width: 60em){
+    .search-results{
+        grid-template-columns: repeat(2, 1fr);
+        width: min(90vw, 80em);
+    };
+}
+
+@media only screen and (min-width: 128em){
+    .search-results{
+        grid-template-columns: repeat(3, 1fr);
+        width: max(100em, 78.125vw);
+    };
+}
+
+.search-results h2, .search-results h3{
+    margin: 0.25em 0 0.75em 0;
+    padding: 0;
+    text-align: left;
+    color: #24d6ff;
+}
+
+.search-results div, .search-results summary{
+    color: #24d6ff;
+}
+
+.search-results h4{
+    margin: 0 0;
+    padding: 0;
+    text-align: left;
+    font-weight: 400;
+    color: #24d6ff;
+}
+
+.route-result{
+    background-color: #000045;
+    color: #24d6ff;
+    border-radius: 1em;
+    padding: 0.5em 0.75em;
+    display: flex;
+    flex-direction: column;
+}
+
+.route-details{
+    text-align: left;
+    flex: 1;
+}
+
+.route-step{
+    padding: 0 2em;
+    margin: 0.5em 0 1em 0;
+}
+
+.route-step-choices{
+    padding: 0 1em;
+    margin: 0.25em 0 0.75em 0;
+}
+
+.route-options{
+    display: flex;
+}
+
+.route-options button{
+    width: 100%;
+}
+
+.route-options button:disabled{
+    background-color: #50a5ff;
+    cursor: not-allowed;
+}
+
+.route-options button:disabled:hover{
+    background-color: #50a5ff;
+    border-color: transparent;
+    cursor: not-allowed;
+}

@@ -1,0 +1,58 @@
+p {
+    margin-top: 0px;
+}
+
+/* .homepage-btn{
+    margin-bottom: 10px;    
+} */
+
+/*Temp CSS for map, stop timetable, and homepage, will redo near end*/
+.homepage-container {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+  
+/* .button-container {
+    border: 1px solid  black;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px; 
+
+} */
+  
+.search-bar::placeholder {
+    color: #999;
+}
+
+.buses-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.bus-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.bus-card h2 {
+    margin-top: 0;
+}
+
+.schedule-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule-item {
+    border-top: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+.schedule-item:first-child {
+    border-top: none;
+}

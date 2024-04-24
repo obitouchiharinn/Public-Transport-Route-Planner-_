@@ -1,0 +1,41 @@
+.searchContainer{
+    text-align: center;
+}
+
+.map-component-wrapper{
+    /* border: 2px solid black; */
+    height: 70vh;
+}
+
+.map-wrapper{
+    border: 5px solid rgb(78, 124, 209);
+    width : 90%;
+    margin : 0 auto;
+    border-radius: 10px;  
+      
+}
+
+.search-bar {
+    text-align: center;
+    width: 70%;
+    color: rgb(28, 110, 177);
+    font-weight: bolder;
+    border: 5px solid rgb(78, 124, 209);
+    border-top : 1px;
+    border-radius: 0px 0px 10px 10px;
+    /* margin-bottom: 30px; */
+    
+}
+
+@media display and (max-width: 600px) {
+    .search-bar {
+        width: 90%;
+    }
+}
+
+
+/* .map{
+    width: 80%;
+    height: 70ch;
+    margin: 0 auto;
+} */

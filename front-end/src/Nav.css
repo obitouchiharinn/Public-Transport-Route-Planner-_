@@ -1,0 +1,37 @@
+button{
+    padding : 5px;
+    height : 40px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3b96c0;
+    color: white;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.nav-button-container {
+    display: grid;
+    margin : 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+    /* border:1px solid black; */
+}
+
+@media screen and (max-width: 1000px) {
+    /* .nav-button-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+         
+    } */
+    button{
+        width: 130px;
+    }
+}
+
+.selected-nav-btn{
+    border: 2px solid #00cfff;
+}

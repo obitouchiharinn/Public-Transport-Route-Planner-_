@@ -1,0 +1,9 @@
+\COPY routes (route_id, route_short_name, route_long_name) FROM '<PATH TO CSV FILE>' DELIMITER ',' CSV HEADER;
+
+\COPY trips (trip_id, route_id, service_id, trip_headsign, direction_id, block_id) FROM '<PATH TO CSV FILE>' DELIMITER ',' CSV HEADER;
+
+\COPY stops (stop_id, stop_code, stop_name, stop_lat, stop_lon) FROM '<PATH TO CSV FILE>' DELIMITER ',' CSV HEADER;
+
+\COPY times (trip_id, arrival_time, departure_time, stop_id, stop_sequence) FROM '<PATH TO CSV FILE>' DELIMITER ',' CSV HEADER;
+
+\COPY service (service_number, service_date) FROM '<PATH TO CSV FILE>' DELIMITER ',' CSV HEADER;
