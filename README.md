@@ -1,6 +1,6 @@
 # Transit Travel Guide - Final Report
 
-A transit route planning app, with additional tools to assist in viewing TransLink routes and planning, stops for regular riders in the Metro Vancouver area, such as an interactive map, live timetables, and route planning system. A full-stack team project developed for CMPT372 at SFU, using React with Vite and Node.js with Express.
+A transit route planning app, with additional tools to assist in viewing TransLink routes and planning stops for regular riders in the Metro Vancouver area, such as an interactive map, live timetables, and route planning system. A full-stack team project developed for CMPT372 at SFU, using React with Vite and Node.js with Express.
 
 Project URL: https://transit-app-frontend-1-lc5xesneda-uw.a.run.app
 
