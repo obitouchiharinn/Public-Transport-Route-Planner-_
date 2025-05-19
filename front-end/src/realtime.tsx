@@ -77,8 +77,9 @@ export default function RealTimeInfo(){
 
     return (
         <div className={"main-wrapper"}>
-            <Header/>
             <NavBar page={"realtime"}/>
+            <Header/>
+            
             <RouteSelector submitRoutes={submit} setError={() => {}} date={"2024-04-09T00:00"}/>
             <h2>Selected Trip</h2>
             <div className={"realtime-sequence"}>

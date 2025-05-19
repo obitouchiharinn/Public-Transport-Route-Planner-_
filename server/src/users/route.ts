@@ -36,16 +36,15 @@ router.post("/users/register", databaseErrorHandler<Empty, Empty, {name: string,
     try{
         const hash = await bcrypt.hash(password, 10);
         const result = await queries.addUser(name,email,hash);
-        return res.status(200).send("Account succussfully added")
-        // const token = jwt.sign({email: email}, SECRET_KEY);
-        // return res.status(200).json({token: token})
-
+        return res.status(200).json({message: "Account successfully added"});
     }
     catch(err: any){
         console.log(`error: ${err}`)
-        return res.status(err).json({error: "Server error",});
+        return res.status(500).json({error: "Server error"});
     }
 }));
+
+
 router.post("/users/login", databaseErrorHandler<Empty, Empty, {email:string, password:string }>(async(req,res)=>{
     // console.log(req.body)
     const email = req.body.email;

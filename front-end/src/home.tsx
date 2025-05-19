@@ -8,8 +8,9 @@ const HomePage = () => {
   //Temp homepage for accessing available components
   return (
     <div className="homepage-container">
-      <Header/>
       <NavBar page={"home"}/>
+      <Header/>
+      
       <MapComponent></MapComponent>
     </div>
   );

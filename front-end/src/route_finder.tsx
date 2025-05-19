@@ -63,8 +63,9 @@ export default function RouteFinder(){
 
     return (
         <div className={"main-wrapper"}>
-            <Header/>
             <NavBar page={"routefinder"}/>
+            <Header/>
+            
             <div className={"form-wrapper"}>
                 <h2>Route Finder</h2>
                 <select onChange={(event) => setStartPoint(event.target.value)}>

@@ -129,8 +129,9 @@ export default function StaticTimetable(){
 
     return (
         <div className="main-wrapper">
-            <Header/>
             <NavBar page={"static"}/>
+            <Header/>
+            
             <div className={"form-wrapper"}>
                 <h2 className={"form-heading"}>Date and Time</h2>
                 <label htmlFor={"datetime"}>Date</label>

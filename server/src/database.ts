@@ -17,7 +17,7 @@ export async function initializeDatabase(): Promise<void>{
         const database = process.env["CLOUD_DATABASE"];
         const instance = process.env["CLOUD_INSTANCE"]
 
-        if (user !== undefined && password !== undefined && database !== undefined && instance !== undefined){
+        if (user !== undefined && password !== undefined && database !== undefined && instance !== undefined && instance !== "") {
             const clientOpts = await connector.getOptions({
                 instanceConnectionName: instance,
                 //ipType: 'PUBLIC',
@@ -33,9 +33,17 @@ export async function initializeDatabase(): Promise<void>{
             const {rows} = await pool.query("SELECT * FROM bull");
             console.log(rows[0]);
             console.log("Connected to cloud database");
-        } else{
+        } else if (user !== undefined && password !== undefined && database !== undefined) {
+            pool = new Pool({
+                user: user,
+                password: password,
+                database: database,
+                max: 5
+            });
+            console.log("Connected to local database with credentials");
+        } else {
             pool = new Pool();
-            console.log("Connected to local database");
+            console.log("Connected to local database without credentials");
 
             //queries.getEdgeCosts("008", 0, "50778", "50782").then((value) => console.log(value));
             

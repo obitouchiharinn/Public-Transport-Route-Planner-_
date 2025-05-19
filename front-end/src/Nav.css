@@ -1,37 +1,119 @@
-button{
-    padding : 5px;
-    height : 40px;
-}
+
+/* Nav.css - Professional Navigation Bar Styling */
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #3b96c0;
-    color: white;
-    margin-bottom: 20px;
-    overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #2c80af, #3b96c0, #2c80af);
+  padding: 12px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .nav-button-container {
-    display: grid;
-    margin : 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 10px;
-    /* border:1px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1200px;
+  width: 100%;
 }
 
+.nav-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 40px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-btn:active {
+  transform: translateY(1px);
+}
+
+.nav-btn.selected {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px #00cfff;
+  position: relative;
+}
+
+.nav-btn.selected:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00cfff;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 1000px) {
-    /* .nav-button-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-         
-    } */
-    button{
-        width: 130px;
-    }
+  .nav-button-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin;
+  }
+  
+  .nav-btn {
+    min-width: 130px;
+    flex-shrink: 0;
+  }
 }
 
-.selected-nav-btn{
-    border: 2px solid #00cfff;
+/* Small screen adjustments */
+@media screen and (max-width: 600px) {
+  .nav-container {
+    padding: 10px;
+  }
+  
+  .nav-button-container {
+    gap: 8px;
+  }
+  
+  .nav-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    min-width: 110px;
+  }
+}
+
+/* Subtle scrollbar styling for webkit browsers */
+.nav-button-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.nav-button-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.nav-button-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.nav-button-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }

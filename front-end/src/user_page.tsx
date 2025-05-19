@@ -55,8 +55,9 @@ function UserPage() {
 
   return (
     <div className="userpage-component-wrapper">
-      <Header/>
       <NavBar page={"profile"}/>
+      <Header/>
+      
       <h2>Profile</h2>
       {errorMessage && <p>{errorMessage}</p>}
       {user &&(

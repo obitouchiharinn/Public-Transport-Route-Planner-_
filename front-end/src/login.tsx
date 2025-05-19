@@ -50,8 +50,9 @@ const Login = () => {
     }
   return (
     <div className="Login-component-wrapper">
-      <Header/>
       <NavBar page={"login"}/>
+      <Header/>
+      
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email:</label>

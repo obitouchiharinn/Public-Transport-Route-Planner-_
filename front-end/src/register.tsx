@@ -46,8 +46,9 @@ const Register = () => {
   return (
     <div>
       {/* <div className={"main-wrapper"}> */}
+       <NavBar page={"register"}/>
         <Header/>
-        <NavBar page={"register"}/>
+       
       {/* </div> */}
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
