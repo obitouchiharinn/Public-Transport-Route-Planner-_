@@ -1,4 +1,4 @@
-# Transit Route Planner - How to Run
+# Public Transport Route Planner - How to Run
 
 This guide explains how to run the Transit Route Planner project locally, including both the front-end and server components.
 
